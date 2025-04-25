@@ -1,0 +1,42 @@
+# Archivos de ayuda generados
+HELP.md
+
+# Archivos de compilación de Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Ignorar salidas de compilación dentro del código fuente
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Archivos específicos de STS (Spring Tool Suite)
+.apt_generated/
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# Archivos específicos de IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# Archivos de NetBeans (opcional, por si cambio a este ambiente)
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Configuración de VSCode (opcional, por si cambio a este editor)
+.vscode/
