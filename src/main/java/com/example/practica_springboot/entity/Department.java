@@ -22,6 +22,6 @@ public class Department {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long departmentId;
     private String departmentName;
-    private String departmentAdress;
+    private String departmentAddress;
     private String departmentCode;
 }
