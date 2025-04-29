@@ -4,10 +4,10 @@ package com.example.practica_springboot.controller;
 import com.example.practica_springboot.entity.Department;
 import com.example.practica_springboot.service.DepartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import jakarta.validation.*;
 
 
 @RestController
@@ -18,7 +18,7 @@ public class DepartmentController {
     // save operation
     @PostMapping("/departments")
     public Department saveDepartment(
-            @Validated @RequestBody Department department)
+            @Valid @RequestBody Department department)
     {
         return departmentService.saveDepartment(department);
     }
