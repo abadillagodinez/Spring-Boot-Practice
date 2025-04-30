@@ -31,7 +31,7 @@ public class DepartmentController {
     }
 
     // update operation
-    @PutMapping("/department/{id}")
+    @PutMapping("/departments/{id}")
     public Department updateDepartment(
             @RequestBody Department department,
             @PathVariable("id") Long departmentId
@@ -40,7 +40,7 @@ public class DepartmentController {
     }
 
     // delete mapping
-    @DeleteMapping("/department/{id}")
+    @DeleteMapping("/departments/{id}")
     public String deleteDepartmentById(
             @PathVariable("id") Long departmentId
     ) {
